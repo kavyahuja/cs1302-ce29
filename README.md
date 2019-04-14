@@ -1,8 +1,8 @@
 # cs1302-ce29 Complexity Classes
 
 In this class exercise, you will gain a deeper understanding of the notable complexity classes by plotting 
-the functions using your knowledge of lambda expressions, Java generics and JavaFX. The final product shown
-below should look familiar from the Big-O tutorial.
+the functions using a JavaFX `LineChart`. By the end of the exercise, your application should show all of
+the notable complexity classes in the `LineChart`. The final product should look similar to the image below.
 
 ![`Final Product`](https://github.com/cs1302uga/cs1302-ce30/raw/master/Final.png)
 
@@ -11,7 +11,7 @@ below should look familiar from the Big-O tutorial.
 * [`CSCI 1302 Big-O Tutorial`](http://cobweb.cs.uga.edu/~mec/cs1302-bigo/)
 * Java Generics
 * Lambda Expressions
-* JavaFX `LineChart`
+* A basic understanding of JavaFX and the `LineChart` class.
 
 ## Questions
 
@@ -43,14 +43,15 @@ command depends on your present working directory), then please note that contex
    ```
    
 1. You should also notice the provided `pom.xml` and `Makefile`. The makefile can be used to compile 
-   and run your code. However, you will have to make a few changes before it will compile.
+   and run your code. However, the code will not compile at this time.
    
 ## Exercise Steps
 
 1. While looking in the `src` directory, you likely saw a file called `ChartUtility.java`. 
    This file contains a utility class with some helpful methods for creating JavaFX line charts.
-   Using the provided methods will allow you to focus on the plots instead of the details of
-   how to build a line chart.
+   Using the provided methods will allow you to focus on plotting the complexity class functions
+   instead of the details of how to build a line chart.
+   
    Take a few minutes to familiarize yourselves with the documentation for these methods 
    using the documentation found here: 
    [Chart Utility](http://cobweb.cs.uga.edu/~barnes/cs1302-ce29-doc/)
