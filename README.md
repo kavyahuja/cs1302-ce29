@@ -83,6 +83,31 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+   linear functions for `0 <= n <= 100`.
+
+   * `1.0 * n + 2.0`
+   * `1.2 * n + 1.0`
+   * `1.4 * n - 1.0`
+   * `1.6 * n`
+   
+   As you increase `X_FINAL` and `Y_FINAL`, do the functions group together or separate
+   more?
+   
+1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+   quadratic functions for `0 <= n <= 100` in addition to any previous functions plotted.
+
+   * `Math.pow(n, 2.0) + 2.0 * n - 1.0`
+   * `2.0 * Math.pow(n, 2.0) + 1.5 * n + 2.0`
+   * `1.5 * Math.pow(n, 2.0) + 2.0 * n - 3.0`
+   * `Math.pow(n, 2.0) + 42.0`
+   
+   As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
+   more when compared to:
+   
+   * each other?
+   * the linear functions?
+
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following notable 
    complexity classes:
 
