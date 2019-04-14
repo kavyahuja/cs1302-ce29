@@ -1,4 +1,4 @@
-MAIN_CLASS = cs1302.ce30.ChartDriver
+MAIN_CLASS = cs1302.ce29.ChartDriver
 
 run: compile
 	export MAVEN_OPTS=-Dprism.order=sw; \
