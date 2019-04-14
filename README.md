@@ -72,9 +72,13 @@ command depends on your present working directory), then please note that contex
    * **Current Pair Programming Rider**: Stay actively engaged with your group member while
      they are working. Offer suggestions and point out typos or logical errors as they work. 
    
-1. Once you complete `genData`, execute the `make` command to compile and run your code. After you've 
-   confirmed that the code compiles, runs, and shows a nice looking plot, add and commit your changes 
-   to the local repository.
+1. Once you complete `genData`, execute the `make` command to compile and run your code. If you 
+   notice that the plots are close to the bottom of the graph, you may need to decrease the 
+   `Y_BOUND` variable in `ComplexityClasses.java`. Try a few different values to get the plot
+   to clearly show the plot lines.
+
+1. After you've confirmed that the code compiles, runs, and shows a nice looking plot, add and 
+   commit your changes to the local repository.
 
 **CHECKPOINT**
 
