@@ -52,16 +52,6 @@ public class ComplexityClasses extends Application {
         // Add the linear time data series to the line chart
         ChartUtility.addSeries(lc, x, genData(x, n -> 1.0 * n), "Linear");
 
-        // linearithmic
-
-        // exponential
-
-        // logarithmic
-
-        // quadratic
-
-        // cubic
-
         Scene scene = new Scene(lc);
         scene.getStylesheets().add("chartStyle.css"); // use CSS to remove line symbols
         stage.setTitle("Complexity Classes");         // set app title
