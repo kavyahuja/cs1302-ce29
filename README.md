@@ -53,7 +53,7 @@ command depends on your present working directory), then please note that contex
    how to build a line chart.
    Take a few minutes to familiarize yourselves with the documentation for these methods 
    using the documentation found here: 
-   [Chart Utility](http://cobweb.cs.uga.edu/~barnes/cs1302-ce30-doc/)
+   [Chart Utility](http://cobweb.cs.uga.edu/~barnes/cs1302-ce29-doc/)
 
 1. Take a few more minutes to read through `ComplexityClasses.java`. This file contains a `start` method
    which does the following:
