@@ -45,15 +45,12 @@ public class ComplexityClasses extends Application {
 	    .mapToObj(i -> i)
 	    .toArray(Integer[]::new);
 
-        // Constant Time Example
-	Double[] y = genData(x, val -> 10.0);
-
         // Create initial line chart and add the constant time data series
-        lc = ChartUtility.createChart(x, y, "Size", "Operations", Y_FINAL, "Constant");
+        lc = ChartUtility.createChart(x, genData(x, n -> 10.0), "Size", "Operations", Y_FINAL, "Constant");
         lc.setTitle("Complexity Classes");
 
         // Add the linear time data series to the line chart
-        ChartUtility.addSeries(lc, x, genData(x, val->val.doubleValue()), "Linear");
+        ChartUtility.addSeries(lc, x, genData(x, n -> 1.0 * n), "Linear");
 
         // linearithmic
 
