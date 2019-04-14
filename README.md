@@ -114,6 +114,8 @@ command depends on your present working directory), then please note that contex
    * each other?
    * the linear functions?
    
+**CHECKPOINT**
+ 
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
@@ -129,6 +131,25 @@ command depends on your present working directory), then please note that contex
    more when compared to:
    
    * each other?
+   * the quadratic functions?
+   * the linear functions?
+   
+1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+   exponential functions for `0 <= n <= 100` in addition to any previous functions plotted.
+
+   * `Math.pow(2.0, n) + Math.pow(n, 2.0)`
+   * `Math.pow(1.5, n) + 32.0`
+   * `Math.pow(1.3, n) + n`
+   * `Math.pow(n, 3.0) - Math.pow(n, 3.0)`
+   
+   Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
+   a nice looking plot), add and commit your changes to the local repository.
+   
+   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
+   more when compared to:
+   
+   * each other?
+   * the cubic functions?
    * the quadratic functions?
    * the linear functions?
    
