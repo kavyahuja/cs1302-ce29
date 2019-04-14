@@ -6,6 +6,12 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.chart.NumberAxis;
 import java.util.Arrays;
 
+/**
+ * A utility class for creating JavaFX {@code LineChart} objects.
+ * The static methods in this class hide some of the details of
+ * creating JavaFX line charts to allow the user to focus on the
+ * contents of the chart instead of the chart creation details.
+ */
 public class ChartUtility{
 
     /**
