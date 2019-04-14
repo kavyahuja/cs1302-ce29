@@ -91,7 +91,10 @@ command depends on your present working directory), then please note that contex
    * `1.4 * n - 1.0`
    * `1.6 * n`
    
-   As you increase `X_FINAL` and `Y_FINAL`, do the functions group together or separate
+   Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
+   a nice looking plot), add and commit your changes to the local repository.
+   
+   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do the functions group together or separate
    more?
    
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
@@ -102,11 +105,34 @@ command depends on your present working directory), then please note that contex
    * `1.5 * Math.pow(n, 2.0) + 2.0 * n - 3.0`
    * `Math.pow(n, 2.0) + 42.0`
    
-   As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
+   Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
+   a nice looking plot), add and commit your changes to the local repository.
+   
+   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
    more when compared to:
    
    * each other?
    * the linear functions?
+   
+1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+   cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
+
+   * `1.1 * Math.pow(n, 3.0) + 1.3 * n - 4.0`
+   * `2.2 * Math.pow(n, 3.0) + 1.5 * n + 2.0`
+   * `1.5 * Math.pow(n, 3.0) + n - 3.5`
+   * `Math.pow(n, 3.0) - 42.0`
+   
+   Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
+   a nice looking plot), add and commit your changes to the local repository.
+   
+   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
+   more when compared to:
+   
+   * each other?
+   * the quadratic functions?
+   * the linear functions?
+   
+ **CHECKPOINT**
 
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following notable 
    complexity classes:
