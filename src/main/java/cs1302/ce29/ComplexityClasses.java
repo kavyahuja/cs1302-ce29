@@ -5,6 +5,8 @@ import javafx.stage.Stage;
 import javafx.scene.chart.LineChart;
 import javafx.scene.Scene;
 import java.util.function.Function;
+import java.util.stream.IntStream;
+import java.util.Arrays;
 
 /**
  * A JavaFX application containing a {@code LineChart} with series for each of the following
@@ -22,7 +24,7 @@ public class ComplexityClasses extends Application {
 
     /* Bound for the X-axis in the line chart. */
     private static final int X_START = 0;   // inclusive
-    private static final int X_FINAL = 100; // inclusive
+    private static final int X_FINAL = 100; // exclusive
 
     /* Bound for the Y-axis in the line chart. */
     private static final int Y_FINAL = 100; // inclusive
@@ -39,10 +41,9 @@ public class ComplexityClasses extends Application {
     public void start(Stage stage) {
 
         // Initialize the values for the x-axis (Problem Size)
-	Integer[] x  = new Integer[N];
-        for(int i = X_FINAL; i <= X_FINAL; i++) {
-            x[i] = i;
-        } // for
+	Integer[] x = IntStream.range(X_START, X_FINAL)
+	    .mapToObj(i -> i)
+	    .toArray(Integer[]::new);
 
         // Constant Time Example
 	Double[] y = genData(x, val -> 10.0);
@@ -89,7 +90,7 @@ public class ComplexityClasses extends Application {
      */
     public Double[] genData(Integer[] x, Function<Integer, Double> f) {
         // TODO: Implement Me!
-	throw new UnsupportedOperationException("not yet implemented");
+	throw new UnsupportedOperationException("genData method not yet implemented");
     } // genData
 
 } // ComplexityClasses
