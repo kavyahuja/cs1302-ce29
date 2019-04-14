@@ -20,13 +20,17 @@ import java.util.function.Function;
  */
 public class ComplexityClasses extends Application {
 
-    /** Problem size (size of the array) */
-    private static final int N = 100;
+    /* Bound for the X-axis in the line chart. */
+    private static final int X_START = 0;   // inclusive
+    private static final int X_FINAL = 100; // inclusive
 
-    /** Bound for the Y-axis in the LineChart */
-    private static final int Y_BOUND = 10000;
+    /* Bound for the Y-axis in the line chart. */
+    private static final int Y_FINAL = 100; // inclusive
 
-    /** Line chart for plots. */
+    /* Last Problem Size */
+    private static final int N = X_FINAL - X_START;
+
+    /* Line chart for plots. */
     private LineChart<Number, Number> lc;
 
     /**
@@ -36,19 +40,19 @@ public class ComplexityClasses extends Application {
 
         // Initialize the values for the x-axis (Problem Size)
 	Integer[] x  = new Integer[N];
-        for(int i = 0; i < x.length; i++) {
+        for(int i = X_FINAL; i <= X_FINAL; i++) {
             x[i] = i;
         } // for
 
         // Constant Time Example
-	Double[] y = genData(N, val -> 10.0);
+	Double[] y = genData(x, val -> 10.0);
 
         // Create initial line chart and add the constant time data series
-        lc = ChartUtility.createChart(x, y, "Size", "Operations", Y_BOUND, "Constant");
+        lc = ChartUtility.createChart(x, y, "Size", "Operations", Y_FINAL, "Constant");
         lc.setTitle("Complexity Classes");
 
         // Add the linear time data series to the line chart
-        ChartUtility.addSeries(lc, x, genData(N, val->val.doubleValue()), "Linear");
+        ChartUtility.addSeries(lc, x, genData(x, val->val.doubleValue()), "Linear");
 
         // linearithmic
 
@@ -74,16 +78,16 @@ public class ComplexityClasses extends Application {
      * {@code Function} object.
      * For example, a call to
      * <pre>
-     *    genData(2, val -&#62; val.doubleValue() + 10.0);
+     *    genData(x, val -&#62; val.doubleValue() + 10.0);
      * </pre>
      * Would return [10.0, 11.0]. Each value in the array of size 2 is its index value + 10.0 as
      * defined by {@code f}.
      *
      * @return the double array containing the mapped index values
-     * @param size the size of the array to create
+     * @param x the x-axis to use when generating the data
      * @param f the function to map index values to doubles
      */
-    public Double[] genData(int size, Function<Integer, Double> f) {
+    public Double[] genData(Integer[] x, Function<Integer, Double> f) {
         // TODO: Implement Me!
 	throw new UnsupportedOperationException("not yet implemented");
     } // genData
