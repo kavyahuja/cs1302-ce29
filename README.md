@@ -140,7 +140,7 @@ command depends on your present working directory), then please note that contex
    * `Math.pow(2.0, n) + Math.pow(n, 2.0)`
    * `Math.pow(1.5, n) + 32.0`
    * `Math.pow(1.3, n) + n`
-   * `Math.pow(n, 3.0) - Math.pow(n, 3.0)`
+   * `2.0 * Math.pow(1.2. n) - 0.5 * Math.pow(n, 3.0)`
    
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
