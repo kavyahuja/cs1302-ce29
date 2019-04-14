@@ -153,21 +153,8 @@ command depends on your present working directory), then please note that contex
    * the quadratic functions?
    * the linear functions?
    
- **CHECKPOINT**
-
-1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following notable 
-   complexity classes:
-
-   * Logarithmic Time
-   * Linearithmic Time (nlogn)
-   * Quadratic Time
-   * Cubic Time
-   * Exponential Time
-   * Factorial Time
-
-1. Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
-   a nice looking plot), add and commit your changes to the local repository.
-
+1. **QUESTION:** What do you think the instructors are tying to get you to see with all these plots?
+   
 **CHECKPOINT**
 
 <hr/>
