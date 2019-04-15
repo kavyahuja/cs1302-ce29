@@ -61,20 +61,20 @@ public class ComplexityClasses extends Application {
     } // start
 
     /**
-     * Creates and populate an array of {@code Double} objects using an array of 
+     * Creates and populates an array of {@code Double} objects using an array of 
      * {@code Integer} objects as input. Each value in the created array is 
      * an element of the {@code Integer} array mapped to a {@code Double} via the 
      * specified {@code Function} object. The elements should be mapped in order.
-     * For example, a call to
-     * {@code<pre>
-     *    genData(x, n -&#62; n + 10.0);
-     * </pre>}
-     * where {@code x = [0, 1]} would return {@code [10.0, 11.0]}. Each value in 
-     * the new array is each {@code x} element plus {@code 10.0}, as defined by 
+     * For example, consider generating an array for the function 
+     * <pre>{@code f(n) = n + 10}</pre>
+     * using a call to
+     * <pre>{@code genData(x, n -> n + 10.0);}</pre>
+     * where {@code x = [0, 1]}. This  would return {@code [10.0, 11.0]}. Each value in 
+     * the new array is each element in {@code x} plus {@code 10.0}, as defined by 
      * {@code f}. The new array should be the same length as {@code x}.
      *
      * @return the double array containing the mapped values
-     * @param x the x-axis values to use when generating the data
+     * @param x the array of input values
      * @param f the function to map index values to doubles
      */
     public Double[] genData(Integer[] x, Function<Integer, Double> f) {
