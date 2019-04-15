@@ -61,23 +61,25 @@ public class ComplexityClasses extends Application {
     } // start
 
     /**
-     * A method to create and populate an array of {@code Double} objects of a particular size.
-     * Each value in the array is its index value mapped to a double value by the specified
-     * {@code Function} object.
+     * Creates and populate an array of {@code Double} objects using an array of 
+     * {@code Integer} objects as input. Each value in the created array is 
+     * an element of the {@code Integer} array mapped to a {@code Double} via the 
+     * specified {@code Function} object. The elements should be mapped in order.
      * For example, a call to
-     * <pre>
-     *    genData(x, val -&#62; val.doubleValue() + 10.0);
-     * </pre>
-     * Would return [10.0, 11.0]. Each value in the array of size 2 is its index value + 10.0 as
-     * defined by {@code f}.
+     * {@code<pre>
+     *    genData(x, n -&#62; n + 10.0);
+     * </pre>}
+     * where {@code x = [0, 1]} would return {@code [10.0, 11.0]}. Each value in 
+     * the new array is each {@code x} element plus {@code 10.0}, as defined by 
+     * {@code f}. The new array should be the same length as {@code x}.
      *
-     * @return the double array containing the mapped index values
-     * @param x the x-axis to use when generating the data
+     * @return the double array containing the mapped values
+     * @param x the x-axis values to use when generating the data
      * @param f the function to map index values to doubles
      */
     public Double[] genData(Integer[] x, Function<Integer, Double> f) {
         // TODO: Implement Me!
-	throw new UnsupportedOperationException("genData method not yet implemented");
+        throw new UnsupportedOperationException("genData method not yet implemented");
     } // genData
 
 } // ComplexityClasses
