@@ -42,8 +42,8 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
    
-1. You should also notice the provided `pom.xml` and `Makefile`. The makefile can be used to compile 
-   and run your code. However, the code will not compile at this time.
+1. You should also notice the provided `pom.xml` and `Makefile`. The `Makefile` may be used to compile 
+   and run your code. However, the code will not run correctly at this time.
    
 ## Exercise Steps
 
