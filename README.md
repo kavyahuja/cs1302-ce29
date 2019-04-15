@@ -4,7 +4,7 @@ In this class exercise, you will gain a deeper understanding of the notable comp
 the functions using a JavaFX `LineChart`. By the end of the exercise, your application should show all of
 the notable complexity classes in the `LineChart`. The final product should look similar to the image below.
 
-![`Final Product`](https://github.com/cs1302uga/cs1302-ce30/raw/master/Final.png)
+![`Final Product`](https://github.com/cs1302uga/cs1302-ce29/raw/master/Final.png)
 
 ## References and Prerequisites
 
