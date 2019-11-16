@@ -6,6 +6,13 @@ the notable complexity classes in the `LineChart`. The final product should look
 
 ![`Final Product`](https://github.com/cs1302uga/cs1302-ce29/raw/master/Final.png)
 
+## Course-Specific Learning Outcomes
+* **LO3.d:** Apply pair-programming principles in a software-based project.
+* **LO5.a:** Utilize a version control tool such as Git or Subversion to store 
+and update source code in a multi-programmer software solution.
+* **LO6.c:** (Partial) Implement, analyze, and assess combinations of searching/sorting 
+algorithms such as linear search, binary search, quadratic sorts, and linearithmic sorts.
+
 ## References and Prerequisites
 
 * [`CSCI 1302 Big-O Tutorial`](http://cobweb.cs.uga.edu/~mec/cs1302-bigo/)
@@ -94,9 +101,12 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do the functions group together or separate
-   more?
-   
+   **Write the answers to the following questions in your notes:** 
+      1. If you increase `X_FINAL` to `500` and `Y_FINAL` to `10000`, what do you observe?
+      1. If you increase `Y_FINAL` to `20000`, what do you observe?
+
+1. Change `X_FINAL` and `Y_FINAL` back to `100`.
+
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    quadratic functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
@@ -108,8 +118,8 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
-   more when compared to:
+   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group together or 
+   separate more when compared to:
    
    * each other?
    * the linear functions?
@@ -127,8 +137,8 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
-   more when compared to:
+   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group 
+   together or separate more when compared to:
    
    * each other?
    * the quadratic functions?
@@ -145,15 +155,16 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION:** As you increase `X_FINAL` and `Y_FINAL`, do these functions group together or separate
-   more when compared to:
+   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group together 
+   or separate more when compared to:
    
    * each other?
    * the cubic functions?
    * the quadratic functions?
    * the linear functions?
    
-1. **QUESTION:** What do you think the instructors are tying to get you to see with all these plots?
+1. **QUESTION (answer in your notes):** What do you think the instructors are tying to get you to see 
+   with all these plots?
    
 **CHECKPOINT**
 
