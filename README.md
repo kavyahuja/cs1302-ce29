@@ -1,5 +1,7 @@
 # cs1302-ce29 Complexity Classes
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 In this class exercise, you will gain a deeper understanding of the notable complexity classes by plotting 
 the functions using a JavaFX `LineChart`. By the end of the exercise, your application should show all of
 the notable complexity classes in the `LineChart`. The final product should look similar to the image below.
