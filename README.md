@@ -84,7 +84,7 @@ command depends on your present working directory), then please note that contex
    
 1. Once you complete `genData`, execute the `make` command to compile and run your code. If you 
    notice that the plots are close to the bottom of the graph, you may need to decrease the 
-   `Y_BOUND` variable in `ComplexityClasses.java`. Try a few different values to get the plot
+   `Y_FINAL` variable in `ComplexityClasses.java`. Try a few different values to get the plot
    to clearly show the plot lines.
 
 1. After you've confirmed that the code compiles, runs, and shows a nice looking plot, add and 
@@ -152,7 +152,7 @@ command depends on your present working directory), then please note that contex
    * `Math.pow(2.0, n) + Math.pow(n, 2.0)`
    * `Math.pow(1.5, n) + 32.0`
    * `Math.pow(1.3, n) + n`
-   * `2.0 * Math.pow(1.2. n) - 0.5 * Math.pow(n, 3.0)`
+   * `2.0 * Math.pow(1.2, n) - 0.5 * Math.pow(n, 3.0)`
    
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
