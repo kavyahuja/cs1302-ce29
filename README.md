@@ -1,6 +1,8 @@
 # cs1302-ce29 Complexity Classes
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+<!--![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)-->
 
 In this class exercise, you will gain a deeper understanding of the notable complexity classes by plotting 
 the functions using a JavaFX `LineChart`. By the end of the exercise, your application should show all of
@@ -90,7 +92,11 @@ command depends on your present working directory), then please note that contex
 1. After you've confirmed that the code compiles, runs, and shows a nice looking plot, add and 
    commit your changes to the local repository.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
 
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    linear functions for `0 <= n <= 100`.
@@ -125,9 +131,13 @@ command depends on your present working directory), then please note that contex
    
    * each other?
    * the linear functions?
-   
-**CHECKPOINT**
- 
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/> 
+
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
@@ -168,7 +178,43 @@ command depends on your present working directory), then please note that contex
 1. **QUESTION (answer in your notes):** What do you think the instructors are tying to get you to see 
    with all these plots?
    
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
+   directory with the following information:
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The weekly code (listed with the exercise on eLC).
+   
+   Here is an example:
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. Weekly Code: replace-with-actual-code
+   ```
+
+1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
+   passes the `checkstyle` audit, then stage and commit all changes.
+
+1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+   
+   ```
+   $ submit cs1302-ce29 cs1302a
+   ```
+     
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
