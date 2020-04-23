@@ -116,6 +116,9 @@ command depends on your present working directory), then please note that contex
    
 1. **In the remaining instructions,**
    **`TEAM_REPO_SSH` will refer to the SSH URL for that repository as provided by GitHub.**
+   The SSH URL is not the same as the URL above. It should look like: 
+   `git@github.com:your_username/cs1302-ce29.git` where `your_username` is
+   your GitHub group member 1's username. 
 
 1. One team member should clone their empty team repository to their Nike account and
    setup a link to the remote skeleton repository provided by your instructor. A sequence
