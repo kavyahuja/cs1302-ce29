@@ -297,11 +297,15 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group together or 
-   separate more when compared to:
+1. **Group Member 1:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
+   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   
+   do these functions group together or separate more when compared to:
    
    3. each other?
    4. the linear functions?
+
+1. **Group Member 1:** Change `Y_FINAL` back to `100`.
 
 1. **Group Member 1:** Once you are convinced that your code is fully working, check that the
    code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
@@ -332,13 +336,17 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group 
-   together or separate more when compared to:
+1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
+   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   
+   do these functions group together or separate more when compared to:
    
    5. each other?
    6. the quadratic functions?
    7. the linear functions?
    
+1. **Group Member 2:** Change `Y_FINAL` back to `100`.
+
 1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
    exponential functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
@@ -350,8 +358,10 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group together 
-   or separate more when compared to:
+1. **Group Member 1:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
+   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   
+   do these functions group together or separate more when compared to:
    
    8. each other?
    9. the cubic functions?
