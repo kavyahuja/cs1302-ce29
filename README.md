@@ -126,7 +126,7 @@ command depends on your present working directory), then please note that contex
    understand what each command is doing *before* you execute the command.
 
    ```
-   $ git clone TEAM_REPO_SSH cs1302-ce29
+   $ git clone --depth 1 TEAM_REPO_SSH cs1302-ce29
    $ cd cs1302-ce29
    $ git remote add skeleton https://github.com/cs1302uga/cs1302-ce29.git
    $ git pull skeleton master
@@ -139,7 +139,7 @@ command depends on your present working directory), then please note that contex
    omitting the last two steps:
 
    ```
-   $ git clone TEAM_REPO_SSH cs1302-ce29
+   $ git clone --depth 1 TEAM_REPO_SSH cs1302-ce29
    $ cd cs1302-ce29
    $ git remote add skeleton https://github.com/cs1302uga/cs1302-ce29.git
    ```
