@@ -222,7 +222,7 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 2 Steps 
 
-1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
    linear functions for `0 <= n <= 100`.
 
    * `1.0 * n + 2.0`
@@ -230,16 +230,40 @@ command depends on your present working directory), then please note that contex
    * `1.4 * n - 1.0`
    * `1.6 * n`
    
-   Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
-   a nice looking plot), add and commit your changes to the local repository.
+   Use `make` to compile and run the code. You should see six total lines in your plot (one constant (at 10.0) and
+   five linear). After you've confirmed that everything is working and the plot looks nice, add and commit your 
+   changes to the local repository. Don't push to GitHub just yet.
    
-   **Write the answers to the following questions in your notes:** 
+1. **Group Member 2:** Create a file called `Notes.md` directly within the `cs1302-ce29` directory. Execute
+   the command `git add Notes.md` to have git track the changes.
+   
+1. **Group Member 2:** Within `Notes.md`, write answers to the following questions:
       1. If you increase `X_FINAL` to `500` and `Y_FINAL` to `10000`, what do you observe?
-      1. If you increase `Y_FINAL` to `20000`, what do you observe?
+      1. If you increase `Y_FINAL` to `20000`, what do you observe? **Note:** if you get a warning message, it is 
+         because Java can't squeeze 20000 tick marks into the space given for the y-axis. Ignore the warning for now.
+         We will change the code back in the next step.
 
 1. Change `X_FINAL` and `Y_FINAL` back to `100`.
 
-1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+1. **Group Member 2:** Once you are convinced that your code is fully working, check that the
+   code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
+   tag **`"checkpoint-2"`**, then **push those changes to GitHub**.
+   
+1. **Group Member 1:** Update your local copy of the repository with the latest
+   changes from the repository hosted on GitHub. If successful, everyone should now be 
+   able to see the updated exercise files in their local copies! Furthermore    
+
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/> 
+
+### Checkpoint 3 Steps
+
+1. **Group Member 1:** Call the `addSeries` method of `ChartUtility` to plot the following 
    quadratic functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `Math.pow(n, 2.0) + 2.0 * n - 1.0`
@@ -250,21 +274,31 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group together or 
+   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group together or 
    separate more when compared to:
    
-   * each other?
-   * the linear functions?
+   3. each other?
+   4. the linear functions?
+
+1. **Group Member 1:** Once you are convinced that your code is fully working, check that the
+   code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
+   tag **`"checkpoint-3"`**, then **push those changes to GitHub**.
+   
+1. **Group Member 2:** Update your local copy of the repository with the latest
+   changes from the repository hosted on GitHub. If successful, everyone should now be 
+   able to see the updated exercise files in their local copies! Furthermore    
+
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
 
 <hr/> 
 
-### Checkpoint 3 Steps
+### Checkpoint 4 Steps
 
-1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
    cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `1.1 * Math.pow(n, 3.0) + 1.3 * n - 4.0`
@@ -275,14 +309,14 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group 
+   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group 
    together or separate more when compared to:
    
-   * each other?
-   * the quadratic functions?
-   * the linear functions?
+   5. each other?
+   6. the quadratic functions?
+   7. the linear functions?
    
-1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
+1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
    exponential functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `Math.pow(2.0, n) + Math.pow(n, 2.0)`
@@ -293,20 +327,20 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-   **QUESTION (answer in your notes):** As you increase `Y_FINAL`, do these functions group together 
+   **QUESTIONS to answer in `Notes.md`:** As you increase `Y_FINAL`, do these functions group together 
    or separate more when compared to:
    
-   * each other?
-   * the cubic functions?
-   * the quadratic functions?
-   * the linear functions?
+   8. each other?
+   9. the cubic functions?
+   10. the quadratic functions?
+   11. the linear functions?
    
-1. **QUESTION (answer in your notes):** What do you think the instructors are tying to get you to see 
-   with all these plots?
+1. **QUESTION to answer in `Notes.md`:** 
+   12. What do you think the instructors are tying to get you to see with all these plots?
    
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
 
 <hr/>
 
