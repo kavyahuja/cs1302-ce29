@@ -262,7 +262,7 @@ command depends on your present working directory), then please note that contex
    
 1. **Group Member 2:** Within `Notes.md`, write answers to the following questions:
       1. If you increase `X_FINAL` to `500` and `Y_FINAL` to `10000`, what do you observe?
-      1. If you increase `Y_FINAL` to `20000`, what do you observe? **Note:** if you get a warning message, it is 
+      2. If you increase `Y_FINAL` to `20000`, what do you observe? **Note:** if you get a warning message, it is 
          because Java can't squeeze 20000 tick marks into the space given for the y-axis. Ignore the warning for now.
          We will change the code back in the next step.
 
