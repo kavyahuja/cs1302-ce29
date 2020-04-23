@@ -34,18 +34,117 @@ command that you typed to make the related action happen. If context is necessar
 command depends on your present working directory), then please note that context as well.
 
 ### Getting Started
+   
+1. To get the most out of this exercise, we encourage you to
+   **form a group of exactly two people for this exercise.**
+   
+   * **Working in a group?** Some steps in this exercise need be done by each group member individually.
+   If a step is being performed by one group member, then everyone is expected
+   to watch, pay attention, and take notes. We recommend that you use Comte de Rochambeau's technique 
+   to determine who gets to be group member 1 and group member 2.
+   
+   * **Working by yourself?** That's okay. If the instructions ask you to switch, then don't switch.
 
-1. **Let's do some pair programming!** Team up with one other person and make sure you only have one 
-   laptop out. We recommend that use Comte de Rochambeau's technique to determine who gets to
-   be the driver.
+1. **Individually:** Make sure that you have done the following:
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce29`:
+   1. [Setup your Free GitHub Pro Account](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-an-account)
+   
+   1. [Setup your SSH Keys on Nike and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
+
+1. **Individually:** If you haven't already done this in a previous exercise, setup your Git username 
+   and email on Nike by modifiying and executing the commands below. 
+   When setting the `user.name` property, please provide your name as it appears on eLC and
+   Athena. If you have a preferred name, then you may include it in parentheses. For the
+   `user.email` property, please use your `@uga.edu` email address:
 
    ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce29.git
+   $ git config --global user.name "Mona Lisa (Liz)"
+   $ git config --global user.email "email@uga.edu"
+   ```
+   
+   You can verify that these properties were setup correctly by observing the output of
+   the following commands:
+   
+   ```
+   $ git config --global user.name
+   $ git config --global user.email
+   ```
+   
+1. For this checkpoint, please be ready to show the public key that you generated on Nike both on
+   Nike and on your GitHub account.
+   
+   * To see the copy of your public key on Nike:
+     ```
+     $ cat ~/.ssh/id_rsa.pub
+     ```
+   * To see the copy of your public key on GitHub, please visit: https://github.com/settings/keys
+   
+1. **GROUP MEMBER 1:** Create a [new repository](https://github.com/new) on GitHub with 
+   the following information:
+   
+   Do **NOT** "Initialize this repository with a README". 
+   Also, do **NOT** click on the dropdowns for a `.gitignore` or license file.
+   
+   | **Field**            | **Value**                                                        |
+   |----------------------|------------------------------------------------------------------|
+   | **Owner**            | _your account_                                                   |
+   | **Repository Name**  | `cs1302-ce29`                                                    |
+   | **Description**      | `Repository for Class Exercise 29`                               |
+   | **Public / Private** | Private -- You choose who can see and commit to this repository. |
+   
+   Once complete, you should have a GitHub-hosted private Git repository at the following
+   website URL: `https://github.com/your_username/cs1302-ce29` where `your_username` is
+   your GitHub account username. 
+   
+   Do **NOT** follow any of the setup instructions given on GitHub at this time.
+   
+1. **If not in a group,** skip to the next step; otherwise, perform the sub-steps below.   
+
+   1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
+      by going to "Settings" → "Collaborators". This will send them an invite that they can
+      accept either via email or by visiting the repository's website on GitHub.
+   
+   1. **GROUP MEMBER 2:** Go to the repository website on GitHub and accept the invition
+      from Group Member 1. If you see a 404 error instead of an invitation, then double check
+      the following:
+   
+      * Repository Website URL
+   
+      * Username that Group Member 1 used when they added you
+   
+      Before continuing, make sure each group member has access to the repository website.  
+   
+1. **In the remaining instructions,**
+   **`TEAM_REPO_SSH` will refer to the SSH URL for that repository as provided by GitHub.**
+
+1. One team member should clone their empty team repository to their Nike account and
+   setup a link to the remote skeleton repository provided by your instructor. A sequence
+   of commands is provided below. You should make every effort to understand what
+   each command is doing *before* you execute the command.
+
+   ```
+   $ git clone TEAM_REPO_SSH cs1302-ce29
+   $ cd cs1302-ce29
+   $ git remote add skeleton https://github.com/cs1302uga/cs1302-ce29.git
+   $ git pull skeleton master
+   $ git push origin master
    ```
 
-1. Change into the `cs1302-ce29` directory that was just created and look around. There should be
+   This team member should now be good to go. A pair programming workflow is provided
+   in the [Appendix - Workflow](#appendix---workflow) section, which provides an
+   overview of one way to send / receive changes from team member to team member
+   while minimizing basic merge conflicts.
+
+1. The other team member should now be able to perform the same sequence of steps,
+   omitting the last two steps:
+
+   ```
+   $ git clone TEAM_REPO_SSH cs1302-ce29
+   $ cd cs1302-ce29
+   $ git remote add skeleton https://github.com/cs1302uga/cs1302-ce29.git
+   ```
+
+1. Change into the `cs1302-ce29` directory that you just set up and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
    files under the `src` subdirectory, use the `find` command as follows:
    
