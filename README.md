@@ -70,7 +70,7 @@ command depends on your present working directory), then please note that contex
    $ git config --global user.email
    ```
    
-1. For this checkpoint, please be ready to show the public key that you generated on Nike both on
+1. If asked, please be ready to show the public key that you generated on Nike both on
    Nike and on your GitHub account.
    
    * To see the copy of your public key on Nike:
