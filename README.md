@@ -118,12 +118,12 @@ command depends on your present working directory), then please note that contex
    **`TEAM_REPO_SSH` will refer to the SSH URL for that repository as provided by GitHub.**
    The SSH URL is not the same as the URL above. It should look like: 
    `git@github.com:your_username/cs1302-ce29.git` where `your_username` is
-   your GitHub group member 1's username. 
+   your group member 1's GitHub username. 
 
-1. One team member should clone their empty team repository to their Nike account and
-   setup a link to the remote skeleton repository provided by your instructor. A sequence
-   of commands is provided below. You should make every effort to understand what
-   each command is doing *before* you execute the command.
+1. **Group Member 1:** clone your empty team repository to your Nike account and
+   setup a link to the remote skeleton repository provided by your instructor. The
+   required sequence of commands is provided below. You should make every effort to 
+   understand what each command is doing *before* you execute the command.
 
    ```
    $ git clone TEAM_REPO_SSH cs1302-ce29
@@ -133,12 +133,9 @@ command depends on your present working directory), then please note that contex
    $ git push origin master
    ```
 
-   This team member should now be good to go. A pair programming workflow is provided
-   in the [Appendix - Workflow](#appendix---workflow) section, which provides an
-   overview of one way to send / receive changes from team member to team member
-   while minimizing basic merge conflicts.
+   This team member should now be good to go.
 
-1. The other team member should now be able to perform the same sequence of steps,
+1. **Group Member 2:** Should now be able to perform the same sequence of steps,
    omitting the last two steps:
 
    ```
