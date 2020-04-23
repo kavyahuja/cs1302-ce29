@@ -162,6 +162,8 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
+### Checkpoint 1 Steps
+
 1. While looking in the `src` directory, you likely saw a file called `ChartUtility.java`. 
    This file contains a utility class with some helpful methods for creating JavaFX line charts.
    Using the provided methods will allow you to focus on plotting the complexity class functions
@@ -202,6 +204,8 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
+### Checkpoint 2 Steps 
+
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    linear functions for `0 <= n <= 100`.
 
@@ -241,6 +245,8 @@ command depends on your present working directory), then please note that contex
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
 
 <hr/> 
+
+### Checkpoint 3 Steps
 
 1. **Swap drivers.** Call the `addSeries` method of `ChartUtility` to plot the following 
    cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
@@ -322,7 +328,7 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
-# Workflow
+## Workflow
 
 If you've followed the instructions included earlier in the exercise,
 then you and your partner already have a GitHub-hosted private Git repository
