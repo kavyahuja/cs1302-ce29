@@ -132,8 +132,8 @@ command depends on your present working directory), then please note that contex
    $ git pull skeleton master
    $ git push origin master
    ```
-
-   This team member should now be good to go.
+   
+   This team member should now be good to go. 
 
 1. **Group Member 2:** Should now be able to perform the same sequence of steps,
    omitting the last two steps:
@@ -143,7 +143,12 @@ command depends on your present working directory), then please note that contex
    $ cd cs1302-ce29
    $ git remote add skeleton https://github.com/cs1302uga/cs1302-ce29.git
    ```
-
+   
+1. **Individually:** Take a minute to read the pair programming workflow
+   in the [Workflow](#workflow) section, which provides an
+   overview of one way to send / receive changes from team member to team member
+   while minimizing basic merge conflicts.
+   
 1. Change into the `cs1302-ce29` directory that you just set up and look around. There should be
    multiple Java files contained within the directory structure. To see a listing of all of the 
    files under the `src` subdirectory, use the `find` command as follows:
@@ -282,6 +287,127 @@ command depends on your present working directory), then please note that contex
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
 
 <hr/>
+
+# Workflow
+
+If you've followed the instructions included earlier in the exercise,
+then you and your partner already have a GitHub-hosted private Git repository
+as well as local working copies of that repository on your respective Nike
+accounts. The challenge now is how to effectively collaborate using these
+three distributed copies of the repository. That is where the workflow
+below comes into play. In this context, a workflow describes a sequence of
+steps that you and your partner can take to effectively collaborate on the
+project and avoid simple merge conflicts.
+
+Below are the steps in our suggested workflow:
+
+1. Decide whose turn it is to **drive**. That person should login to
+   their Nike account and change into the local working copy of their
+   project's repository. The rest of these steps assume this person
+   is executing the commands. When it comes time to change who is
+   driving, that person should follow these steps from the beginning.
+
+1. Use `git status` to see the state of the current branch.
+
+   1. Regardless of what branch you are on, stage and commit all tracked files.
+      If you manually added any new files, then you should add them and
+      commit them.
+
+      ```
+      $ git status
+      ```
+
+   1. If the branch that you are currently on is not `master`, then
+      checkout `master` and repeat the previous sub-step to make
+      sure everything is committed in `master`.
+
+      ```
+      $ git checkout master
+      ```
+
+      If you want / need to, merge the changes from the other branch
+      into `master`, then delete the other branch.
+
+      ```
+      $ git merge branch_name
+      $ git branch -d branch_name
+      ```
+
+      **MERGE CONFLICT?** If you merge, then you may encounter a merge conflict.
+      In this scenario, Git's output will tell you what files are affected. You
+      must then edit those files using your text editor of choice to
+      manually resolve the conflict. Git will mark lines in the affected files
+      with a special `diff` syntax so that you can easily identify them, then make
+      edits to either pick one version or combine them in a desired way.
+      The source code should be clean and free of special `diff` syntax
+      before you save. Once an affected file is saved, you should
+      stage and commit it. The merge conflict is not technically resolved
+      until all affected files are fixed, staged, and committed -- these
+      can be individual commits or one single commit with all affected files
+      on the stage.
+
+1. Now that your local working copy is cleaned up, you should pull
+   changes from your team repository into your local working copy.
+
+   ```
+   $ git pull origin master
+   ```
+
+   If you encounter a merge conflict, then see the **"MERGE CONFLICT?"**
+   note provided earlier in this workflow.
+
+1. Instead of working on your exercise directly in the `master` branch,
+   create a branch for this programming session based on the most
+   recent commit:
+
+   ```
+   $ git branch driver
+   $ git checkout driver
+   ```
+
+   Alternatively, you can use:
+
+   ```
+   $ git checkout -b driver
+   ```
+
+1. Work on the project. As often as is reasonable, you should stage and
+   commit tracked files in this branch. If you add new source code files
+   or visual assets (e.g., images in `src/main/resources`), then be
+   sure to add and commit them. Liberal use of `git status` is highly
+   recommended.
+
+1. Once you are done with this programming session, perhaps for the day
+   or because you want to switch who is driving, you should do the
+   following:
+
+   1. Stage and commit tracked files. Also ensure that new files that
+      you added recently are staged and committed. Remember, you can use
+      `git status` to see what's going on.
+
+   1. Checkout the `master` branch, merge `driver` into `master`, resolve
+      conflicts if necessary, then delete the `driver` branch.
+
+      ```
+      $ git checkout master
+      $ git merge driver
+      $ git branch -f driver
+      ```
+
+      If you encounter a merge conflict, then see the **"MERGE CONFLICT?"**
+      note provided earlier in this workflow.
+
+
+   1. Finally, push your changes up to your team's GitHub repository.
+
+      ```
+      $ git push origin master
+      ```
+      If your partner worked on the project while you were also working
+      on the project, then it's possible that you don't have the most
+      recent changes. In this scenario, return to the first step and
+      quickly repeat -- much of the work is usually minimal in this
+      scenario, assuming you both espouse the same workflow.
 
 ### Submission Steps
 
