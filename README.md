@@ -234,8 +234,31 @@ command depends on your present working directory), then please note that contex
    five linear). After you've confirmed that everything is working and the plot looks nice, add and commit your 
    changes to the local repository. Don't push to GitHub just yet.
    
-1. **Group Member 2:** Create a file called `Notes.md` directly within the `cs1302-ce29` directory. Execute
-   the command `git add Notes.md` to have git track the changes.
+1. **Group Member 2:** Create a file called `Notes.md` directly within the `cs1302-ce29` directory. Within that file,
+   include the following template:
+   
+   ```
+   # Notes
+
+   Group Member 1: insert member 1 full name here
+   Group Member 2: insert member 2 full name here
+   
+   ## Questions
+   1.
+   2.
+   3.
+   4.
+   5.
+   6.
+   7.
+   8.
+   9.
+   10.
+   11.
+   12.
+   ```
+
+1. **Group Member 2:** Execute the command `git add Notes.md` to have git track the changes.
    
 1. **Group Member 2:** Within `Notes.md`, write answers to the following questions:
       1. If you increase `X_FINAL` to `500` and `Y_FINAL` to `10000`, what do you observe?
