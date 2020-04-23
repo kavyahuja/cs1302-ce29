@@ -288,6 +288,40 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
+### Submission Steps
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
+   directory with the following information:
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The weekly code (listed with the exercise on eLC).
+   
+   Here is an example:
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. Weekly Code: replace-with-actual-code
+   ```
+
+1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
+   passes the `checkstyle` audit, then stage and commit all changes.
+
+1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+   
+   ```
+   $ submit cs1302-ce29 cs1302a
+   ```
+     
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
+
+<hr/>
+
 # Workflow
 
 If you've followed the instructions included earlier in the exercise,
@@ -408,38 +442,6 @@ Below are the steps in our suggested workflow:
       recent changes. In this scenario, return to the first step and
       quickly repeat -- much of the work is usually minimal in this
       scenario, assuming you both espouse the same workflow.
-
-### Submission Steps
-
-**Each student needs to individually submit their own work.**
-
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
-
-   1. Your name and UGA ID number;
-   1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
-   
-   Here is an example:
-   
-   ```
-   1. Sally Smith (811-000-999)
-   2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
-   ```
-
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes.
-
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
-   
-   ```
-   $ submit cs1302-ce29 cs1302a
-   ```
-     
-<hr/>
-
-![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
