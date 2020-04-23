@@ -244,18 +244,18 @@ command depends on your present working directory), then please note that contex
    Group Member 2: insert member 2 full name here
    
    ## Questions
-   1.
-   2.
-   3.
-   4.
-   5.
-   6.
-   7.
-   8.
-   9.
-   10.
-   11.
-   12.
+   i.
+   ii.
+   iii.
+   iv.
+   v.
+   vi.
+   vii.
+   viii.
+   ix.
+   x.
+   xi.
+   xii.
    ```
 
 1. **Group Member 2:** Execute the command `git add Notes.md` to have git track the changes.
@@ -359,7 +359,7 @@ command depends on your present working directory), then please note that contex
    11. the linear functions?
    
 1. **QUESTION to answer in `Notes.md`:** 
-   12. What do you think the instructors are tying to get you to see with all these plots?
+   xii. What do you think the instructors are tying to get you to see with all these plots?
    
 <hr/>
 
