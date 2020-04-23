@@ -19,7 +19,7 @@ algorithms such as linear search, binary search, quadratic sorts, and linearithm
 
 ## References and Prerequisites
 
-* [`CSCI 1302 Big-O Tutorial`](http://cobweb.cs.uga.edu/~mec/cs1302-bigo/)
+* [`CSCI 1302 Big-O Tutorial`](http://csweb.cs.uga.edu/~mec/cs1302-bigo/)
 * Java Generics
 * Lambda Expressions
 * A basic understanding of JavaFX and the `LineChart` class.
@@ -160,6 +160,14 @@ command depends on your present working directory), then please note that contex
 1. You should also notice the provided `pom.xml` and `Makefile`. The `Makefile` may be used to compile 
    and run your code. However, the code will not run correctly at this time.
    
+1. Take a minute to think about the result of the last few steps. You and your partner now have copies
+   of a repository that was created by the instructors. You can work on the code in that repository and
+   push the changes to your personal, private, repository on GitHub. By the end of the exercise, your 
+   repository will contain a completed version of the exercise and the course repository will still be
+   in the original state. Also note that since you and your partner are collaborators on your private
+   repository, you can both make modifications to the code. Again, the the [Workflow](#workflow) section
+   contains instructions on how you might navigate this new environment successfully with your partner.
+   
 ## Exercise Steps
 
 ### Checkpoint 1 Steps
@@ -171,7 +179,7 @@ command depends on your present working directory), then please note that contex
    
    Take a few minutes to familiarize yourselves with the documentation for these methods 
    using the documentation found here: 
-   [Chart Utility](http://cobweb.cs.uga.edu/~mec/cs1302-ce29-doc/)
+   [Chart Utility](http://csweb.cs.uga.edu/~mec/cs1302-ce29-doc/)
 
 1. Take a few more minutes to read through `ComplexityClasses.java`. This file contains a `start` method
    which does the following:
@@ -182,21 +190,29 @@ command depends on your present working directory), then please note that contex
    
 1. Pair Program:
 
-   * **Current Pair Programming Driver (person typing)**: Open the `ComplexityClasses.java` file
+   * **Group Member 1:** Open the `ComplexityClasses.java` file
      and implement the `genData` method. Read the associated Javadoc (including the example) along 
      with the example usage of `genData` in the `start` method of `ComplexityClasses` to guide 
      your implementation.
    
-   * **Current Pair Programming Rider**: Stay actively engaged with your group member while
+   * **Group Member 2:** Stay actively engaged with your group member while
      they are working. Offer suggestions and point out typos or logical errors as they work. 
    
-1. Once you complete `genData`, execute the `make` command to compile and run your code. If you 
+1. **Group Member 1:** Once you complete `genData`, execute the `make` command to compile and 
+   run your code. If you 
    notice that the plots are close to the bottom of the graph, you may need to decrease the 
    `Y_FINAL` variable in `ComplexityClasses.java`. Try a few different values to get the plot
    to clearly show the plot lines.
 
-1. After you've confirmed that the code compiles, runs, and shows a nice looking plot, add and 
-   commit your changes to the local repository.
+1. **Group Member 1:** Once you are convinced that your code is fully working, check that the
+   code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
+   tag **`"checkpoint-1"`**, then **push those changes to GitHub**.
+   
+1. **Group Member 2:** Update your local copy of the repository with the latest
+   changes from the repository hosted on GitHub. If successful, everyone should now be 
+   able to see the updated exercise files in their local copies! Furthermore    
+
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
