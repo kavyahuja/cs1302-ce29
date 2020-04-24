@@ -244,18 +244,18 @@ command depends on your present working directory), then please note that contex
    Group Member 2: insert member 2 full name here
    
    ## Questions
-   i.
-   ii.
-   iii.
-   iv.
-   v.
-   vi.
-   vii.
+      i.
+     ii.
+    iii.
+     iv.
+      v.
+     vi.
+    vii.
    viii.
-   ix.
-   x.
-   xi.
-   xii.
+     ix.
+      x.
+     xi.
+    xii.
    ```
 
 1. **Group Member 2:** Execute the command `git add Notes.md` to have git track the changes.
