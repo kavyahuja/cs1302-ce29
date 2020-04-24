@@ -212,7 +212,7 @@ command depends on your present working directory), then please note that contex
    changes from the repository hosted on GitHub. If successful, everyone should now be 
    able to see the updated exercise files in their local copies! Furthermore    
 
-1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
@@ -276,7 +276,7 @@ command depends on your present working directory), then please note that contex
    changes from the repository hosted on GitHub. If successful, everyone should now be 
    able to see the updated exercise files in their local copies! Furthermore    
 
-1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
@@ -296,15 +296,28 @@ command depends on your present working directory), then please note that contex
    
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
+
+1. **Everyone:** With `Y_FINAL` set to 100, take a close look at the plot. It should look very similar to the
+   image below. Notice how the quadratic functions are grouped together in the upper left and the linear functions
+   are spaced out slightly more near the center of the plot.
    
 1. **Group Member 1:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
-   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   increasing `Y_FINAL` by a few thousand but no more than twenty thousand each time until `Y_FINAL` reaches a point above
+   `100,000`. Then, answer the following **questions to in `Notes.md`:** 
    
-   do these functions group together or separate more when compared to:
-   
-   3. each other?
-   4. the linear functions?
+   3. As `Y_FINAL` increases, do the quadratic functions appear to space out more or get closer together? Explain.
+   4. As `Y_FINAL` increases, do the linear functions appear to space out more or get closer together? Explain.
 
+1. **Everyone:** Note that we are comparing the growth rates of these functions using very small problem sizes (`X_FINAL` is 100). 
+   With computer algorithms, it is not uncommon to have a problem size in the millions (or larger). While the number
+   of operations required for large problem sizes would increase significantly under such circumstances, we can still gain
+   an understanding of the growth of these functions by looking at the smaller problem sizes.
+   Changing the value of `Y_FINAL` is increasing the visible range of the y-axis. While
+   we are not seeing the impact of these functions at large values of x, we are able to visualize the impact that
+   a function has on smaller problem sizes. In other words, we're able to see how much faster the number of operations
+   required for a quadratic algorithm increases when compared to the linear functions. This is why it's always important
+   to try and use an efficient algorithm to solve a problem.
+   
 1. **Group Member 1:** Change `Y_FINAL` back to `100`.
 
 1. **Group Member 1:** Once you are convinced that your code is fully working, check that the
@@ -315,7 +328,7 @@ command depends on your present working directory), then please note that contex
    changes from the repository hosted on GitHub. If successful, everyone should now be 
    able to see the updated exercise files in their local copies! Furthermore    
 
-1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
@@ -358,7 +371,7 @@ command depends on your present working directory), then please note that contex
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
    a nice looking plot), add and commit your changes to the local repository.
    
-1. **Group Member 1:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
+1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
    increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
    
    do these functions group together or separate more when compared to:
@@ -370,7 +383,17 @@ command depends on your present working directory), then please note that contex
    
 1. **QUESTION to answer in `Notes.md`:** 
    xii. What do you think the instructors are tying to get you to see with all these plots?
+
+1. **Group Member 2:** Once you are convinced that your code is fully working, check that the
+   code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
+   tag **`"checkpoint-4"`**, then **push those changes to GitHub**.
    
+1. **Group Member 1:** Update your local copy of the repository with the latest
+   changes from the repository hosted on GitHub. If successful, everyone should now be 
+   able to see the updated exercise files in their local copies! Furthermore    
+
+1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
+
 <hr/>
 
 ![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
