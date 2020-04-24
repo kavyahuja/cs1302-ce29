@@ -101,8 +101,8 @@ command depends on your present working directory), then please note that contex
 1. **If not in a group,** skip to the next step; otherwise, perform the sub-steps below.   
 
    1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
-      by going to "Settings" → "Collaborators". This will send them an invite that they can
-      accept either via email or by visiting the repository's website on GitHub.
+      by going to "Settings" → "Manage Access" → "Invite a Collaborator". This will send them 
+      an invite that they can accept either via email or by visiting the repository's website on GitHub.
    
    1. **GROUP MEMBER 2:** Go to the repository website on GitHub and accept the invition
       from Group Member 1. If you see a 404 error instead of an invitation, then double check
