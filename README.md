@@ -256,8 +256,6 @@ command depends on your present working directory), then please note that contex
    viii.
      ix.
       x.
-     xi.
-    xii.
    ```
 
 1. **Group Member 2:** Execute the command `git add Notes.md` to have git track the changes.
