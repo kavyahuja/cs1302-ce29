@@ -369,19 +369,19 @@ command depends on your present working directory), then please note that contex
    a nice looking plot), add and commit your changes to the local repository.
    
 1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
-   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   increasing `Y_FINAL` each time. **Note:** You will need to increase `Y_FINAL` quicker than in the previous checkpoint. We
+   recommend increasing `Y_FINAL` by between `100,000` and `200,000` each time. 
    
-   do these **cubic functions** functions group together or separate more when compared to:
+   Then, answer the following **questions to in `Notes.md`:** 
    
-   5. each other?
-   6. the quadratic functions? -- also, how would you describe the quadratics now that you see
+   5. How would you describe the quadratics now that you see
       them in the the presence of cubics? Please reread <a href="#note">the note</a> from earlier
       to put this into perspective. 
-   7. the linear functions? -- also, how would you describe the linears now that you see
+   6. How would you describe the linears now that you see
       them in the the presence of cubics? Please reread <a href="#note">the note</a> from earlier
       to put this into perspective. 
    
-1. **Group Member 2:** Change `Y_FINAL` back to `100`.
+1. **Group Member 2:** Change `Y_FINAL` back to `10,000`.
 
 1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
    **exponential** functions for `0 <= n <= 100` in addition to any previous functions plotted.
@@ -392,26 +392,26 @@ command depends on your present working directory), then please note that contex
    * `2.0 * Math.pow(1.2, n) - 0.5 * Math.pow(n, 3.0)`
    
    Use `make` to compile and run the code. After you've confirmed that it compiles and runs (and shows
-   a nice looking plot), add and commit your changes to the local repository.
-   
+   a nice looking plot), add and commit your changes to the local repository.   
+      
 1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
-   increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
+   increasing `Y_FINAL` slowly (by a few hundred each time). We recommend increasing `Y_FINAL` by between `100,000` 
+   and `200,000` each time. 
    
-   do these **exponential** functions group together or separate more when compared to:
+   Then, answer the following **questions to in `Notes.md`:** 
    
-   8. each other?
-   9. the cubic functions? -- also, how would you describe the cubics now that you see
+   7. How would you describe the cubics now that you see
       them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
       to put this into perspective.
-   10. the quadratic functions? -- also, how would you describe the quadratics now that you see
+   8. How would you describe the quadratics now that you see
       them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
       to put this into perspective.
-   11. the linear functions? -- also, how would you describe the linears now that you see
+   9. How would you describe the linears now that you see
       them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
       to put this into perspective.
    
 1. **QUESTION to answer in `Notes.md`:** 
-   xii. What do you think the instructors are tying to get you to see with all these plots?
+   x. What do you think the instructors are tying to get you to see with all these plots?
 
 1. **Group Member 2:** Once you are convinced that your code is fully working, check that the
    code passes the `checkstyle` audit, then stage and commit your changes to your local repository with
