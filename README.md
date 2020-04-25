@@ -310,7 +310,7 @@ command depends on your present working directory), then please note that contex
    image below. Notice how the quadratic functions are grouped together in the upper left and the linear functions
    are spaced out slightly more near the center of the plot.
    
-   ![`Screen Shot 1`](https://github.com/bjb211/cs1302-ce29/raw/master/ScreenShot1.jpg)
+   ![`Screen Shot 1`](ScreenShot1.jpg)
    
 1. **Group Member 1:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
    increasing `Y_FINAL` by a few thousand but no more than twenty thousand each time until `Y_FINAL` reaches a point above
