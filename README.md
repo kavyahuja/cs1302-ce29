@@ -1,8 +1,7 @@
 # cs1302-ce29 Complexity Classes
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
-<!--![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)-->
+![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
 
 In this class exercise, you will gain a deeper understanding of the notable complexity classes by plotting 
 the functions using a JavaFX `LineChart`. By the end of the exercise, your application should show all of
@@ -160,13 +159,16 @@ command depends on your present working directory), then please note that contex
 1. You should also notice the provided `pom.xml` and `Makefile`. The `Makefile` may be used to compile 
    and run your code. However, the code will not run correctly at this time.
    
-1. Take a minute to think about the result of the last few steps. You and your partner now have copies
-   of a repository that was created by the instructors. You can work on the code in that repository and
-   push the changes to your personal, private, repository on GitHub. By the end of the exercise, your 
-   repository will contain a completed version of the exercise and the course repository will still be
-   in the original state. Also note that since you and your partner are collaborators on your private
-   repository, you can both make modifications to the code. Again, the the [Workflow](#workflow) section
-   contains instructions on how you might navigate this new environment successfully with your partner.
+1. **Take a minute to think about the result of the last few steps.** 
+
+   * You and your partner now have copies of a repository that was created by the instructors. 
+   * You can work on the code in that repository and push the changes to your personal, private, repository on GitHub. 
+   * By the end of the exercise, your repository will contain a completed version of the exercise and the
+     course repository will still be in the original state. 
+   * Also note that since you and your partner are collaborators on your private
+     repository, you can both make modifications to the code. 
+   * Again, the the [Workflow](#workflow) section contains instructions on how you might navigate this 
+     new environment successfully with your partner.
    
 ## Exercise Steps
 
@@ -223,7 +225,7 @@ command depends on your present working directory), then please note that contex
 ### Checkpoint 2 Steps 
 
 1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
-   linear functions for `0 <= n <= 100`.
+   **linear** functions for `0 <= n <= 100`.
 
    * `1.0 * n + 2.0`
    * `1.2 * n + 1.0`
@@ -262,9 +264,15 @@ command depends on your present working directory), then please note that contex
    
 1. **Group Member 2:** Within `Notes.md`, write answers to the following questions:
       1. If you increase `X_FINAL` to `500` and `Y_FINAL` to `10000`, what do you observe?
+         * Specifically, do you notice any drastic changes between the individual
+           linear functions that are plotted so far? Please provide more than just a
+           yes/no answer. 
       2. If you increase `Y_FINAL` to `20000`, what do you observe? **Note:** if you get a warning message, it is 
          because Java can't squeeze 20000 tick marks into the space given for the y-axis. Ignore the warning for now.
          We will change the code back in the next step.
+         * Specifically, do you notice any drastic changes between the individual
+           linear functions that are plotted so far? Please provide more than just a
+           yes/no answer.
 
 1. Change `X_FINAL` and `Y_FINAL` back to `100`.
 
@@ -276,7 +284,8 @@ command depends on your present working directory), then please note that contex
    changes from the repository hosted on GitHub. If successful, everyone should now be 
    able to see the updated exercise files in their local copies! Furthermore    
 
-1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
+1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`. 
+   Also, look at the GitHub page for your repository.
 
 <hr/>
 
@@ -287,7 +296,7 @@ command depends on your present working directory), then please note that contex
 ### Checkpoint 3 Steps
 
 1. **Group Member 1:** Call the `addSeries` method of `ChartUtility` to plot the following 
-   quadratic functions for `0 <= n <= 100` in addition to any previous functions plotted.
+   **quadratic** functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `Math.pow(n, 2.0) + 2.0 * n - 1.0`
    * `2.0 * Math.pow(n, 2.0) + 1.5 * n + 2.0`
@@ -309,6 +318,13 @@ command depends on your present working directory), then please note that contex
    
    3. As `Y_FINAL` increases, do the quadratic functions appear to space out more or get closer together? Explain.
    4. As `Y_FINAL` increases, do the linear functions appear to space out more or get closer together? Explain.
+   
+   **NOTE:** <a name="note">As we continue to add worse/bigger functions</a>, pay close attention to groups of functions
+   that you previously described as, "getting closer together." Even though the functions in that group/class might 
+   have looked different to begin with (because they're different functions), it might be the case that they start 
+   to look the same as worse/bigger functions are added. **Remember, these functions represent the running times for algorithms**,
+   so we're really observing **how much worse** a higher time complexity algorithm is compared to algorithms in
+   the classes below it. 
 
 1. **Everyone:** Note that we are comparing the growth rates of these functions using very small problem sizes (`X_FINAL` is 100). 
    With computer algorithms, it is not uncommon to have a problem size in the millions (or larger). While the number
@@ -331,6 +347,7 @@ command depends on your present working directory), then please note that contex
    able to see the updated exercise files in their local copies! Furthermore    
 
 1. **Everyone:** View the condensed, graphical version of your Git log using `git adog`.
+   Also, look at the GitHub page for your repository.
 
 <hr/>
 
@@ -341,7 +358,7 @@ command depends on your present working directory), then please note that contex
 ### Checkpoint 4 Steps
 
 1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
-   cubic functions for `0 <= n <= 100` in addition to any previous functions plotted.
+   **cubic** functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `1.1 * Math.pow(n, 3.0) + 1.3 * n - 4.0`
    * `2.2 * Math.pow(n, 3.0) + 1.5 * n + 2.0`
@@ -354,16 +371,20 @@ command depends on your present working directory), then please note that contex
 1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
    increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
    
-   do these functions group together or separate more when compared to:
+   do these **cubic functions** functions group together or separate more when compared to:
    
    5. each other?
-   6. the quadratic functions?
-   7. the linear functions?
+   6. the quadratic functions? -- also, how would you describe the quadratics now that you see
+      them in the the presence of cubics? Please reread <a href="#note">the note</a> from earlier
+      to put this into perspective. 
+   7. the linear functions? -- also, how would you describe the linears now that you see
+      them in the the presence of cubics? Please reread <a href="#note">the note</a> from earlier
+      to put this into perspective. 
    
 1. **Group Member 2:** Change `Y_FINAL` back to `100`.
 
 1. **Group Member 2:** Call the `addSeries` method of `ChartUtility` to plot the following 
-   exponential functions for `0 <= n <= 100` in addition to any previous functions plotted.
+   **exponential** functions for `0 <= n <= 100` in addition to any previous functions plotted.
 
    * `Math.pow(2.0, n) + Math.pow(n, 2.0)`
    * `Math.pow(1.5, n) + 32.0`
@@ -376,12 +397,18 @@ command depends on your present working directory), then please note that contex
 1. **Group Member 2:** Increase the value for `Y_FINAL` and then run `make` to show the plots. Do this multiple times
    increasing `Y_FINAL` slowly (by a few hundred each time). Then, answer the following **questions to in `Notes.md`:** 
    
-   do these functions group together or separate more when compared to:
+   do these **exponential** functions group together or separate more when compared to:
    
    8. each other?
-   9. the cubic functions?
-   10. the quadratic functions?
-   11. the linear functions?
+   9. the cubic functions? -- also, how would you describe the cubics now that you see
+      them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
+      to put this into perspective.
+   10. the quadratic functions? -- also, how would you describe the quadratics now that you see
+      them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
+      to put this into perspective.
+   11. the linear functions? -- also, how would you describe the linears now that you see
+      them in the the presence of exponentials? Please reread <a href="#note">the note</a> from earlier
+      to put this into perspective.
    
 1. **QUESTION to answer in `Notes.md`:** 
    xii. What do you think the instructors are tying to get you to see with all these plots?
