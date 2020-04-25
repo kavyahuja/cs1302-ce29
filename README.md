@@ -332,8 +332,8 @@ command depends on your present working directory), then please note that contex
    an understanding of the growth of these functions by looking at the smaller problem sizes.
    Changing the value of `Y_FINAL` is increasing the visible range of the y-axis. While
    we are not seeing the impact of these functions at large values of x, we are able to visualize the impact that
-   a function has on smaller problem sizes. In other words, we're able to see how much faster the number of operations
-   required for a quadratic algorithm increases when compared to the linear functions. 
+   a function has on smaller problem sizes. In other words, we're able to see the increase in the number of operations
+   required for a quadratic algorithm when compared to the linear algorithms. 
    **This is why it's always important to try and use an efficient algorithm to solve a problem.**
    
 1. **Group Member 1:** Change `Y_FINAL` back to `100`.
