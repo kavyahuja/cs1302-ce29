@@ -78,8 +78,12 @@ public class ComplexityClasses extends Application {
      * @param f the function to map index values to doubles
      */
     public Double[] genData(Integer[] x, Function<Integer, Double> f) {
-        // TODO: Implement Me!
-        throw new UnsupportedOperationException("genData method not yet implemented");
+         Double[] Array1  = Arrays.stream(x)
+            .map(e -> f.apply(e))
+            .toArray(Double[]::new);
+
+	 return Array1;
+	 // throw new UnsupportedOperationException("genData method not yet implemented");
     } // genData
 
 } // ComplexityClasses
